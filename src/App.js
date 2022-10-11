@@ -7,6 +7,7 @@ import MainHeader from './components/MainHeader/MainHeader';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  // this anonymous function will only run once when the app start because it has no dependencies.
   useEffect(() => {
     const storedUser = localStorage.getItem('isLoggedIn');
     if (storedUser === '1') {
